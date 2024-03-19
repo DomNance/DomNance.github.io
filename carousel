@@ -1,0 +1,23 @@
+let slideIndex = 1;
+const imageCount = ["1 / 3", "2 / 3", "3 / 3"];
+const images = ["pdf examples\LPSample.jpg", "pdf examples\BTSSample.jpg", "pdf examples\APSample.jpg"];
+
+function plusSlide(addition) {
+    if ((slideIndex+addition) = 0) {
+        slideIndex=3;
+    } else if ((slideIndex+addition) = images.length) {
+        slideIndex=0;
+    }
+    document.getElementById("counting").innerHTML = "text here";
+    return slideIndex+addition;
+}
+
+function currentImageIndex() {
+    return slideIndex;
+}
+
+function displayImage() {
+    return images[slideIndex];
+}
+
+document.getElementById("counting").innerHTML = "text here";

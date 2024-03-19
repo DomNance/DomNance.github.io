@@ -1,0 +1,92 @@
+.information {
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 25px;
+    width: 70%;
+}
+
+.main {
+    padding-top:25px;
+    display: flex;
+}
+
+.main-img {
+    border-radius: 50%;
+}
+
+.center-image {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+}
+
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 35px; 
+    text-align: justify;
+    word-wrap: break-word;
+}
+
+.storefront {
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 33pt;
+}
+
+.container {
+    position: relative;
+    display: flex;
+}
+
+.mySlides {
+    /*display: none;*/
+    text-align: center;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: rgb(54, 54, 54);
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+#photoID {
+    border-color: black;
+    border-width: 15px;
+    box-shadow: 2px 2px 8px #000000;
+}
