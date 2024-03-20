@@ -1,3 +1,11 @@
+body {
+    -webkit-text-size-adjust: none;
+}
+
+.top-banner {
+    padding-bottom: 25px;
+}
+
 .information {
     display: block;
     position: relative;
@@ -5,45 +13,104 @@
     margin-right: auto;
     padding-top: 25px;
     width: 70%;
-}
 
-.main {
-    padding-top:25px;
-    display: flex;
-}
-
-.main-img {
-    border-radius: 50%;
-}
-
-.center-image {
-    text-align: center;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 25%;
-}
-
-.parallax {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
     line-height: 35px; 
     text-align: justify;
     word-wrap: break-word;
 }
 
-.storefront {
-    width: 100%;
+a {
+    text-decoration: none;
+    color: rgb(62, 71, 71);
+    animation-name: reverse-color-change;
+    animation-duration: 1s;
+}
+
+a:hover {
+    animation: color-change 1s forwards;
+}
+
+.westprint {
+    padding-bottom: 25px;
+}
+
+.main {
+    opacity: 0%;
+    padding-top:50px;
+    display: flex;
+    animation: fade-in 2.0s 0.5s forwards;
+}
+
+.education {
+    padding-top: 25px;
+}
+
+.skills {
+    padding-top: 25px;
+}
+
+.left-hang {
+    float: left; 
+    text-align: left;
+}
+
+.right-hang {
+    float: right;
+    text-align: right;
+}
+
+.bio-text {
+    text-align: left;
+    padding-left: 25px;
+}
+
+.bio {
+    text-align: left; 
+    padding-left: 25px; 
+    font-size: 14pt;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0%;
+    } to {
+        opacity: 100%;
+    }
+}
+
+@keyframes color-change {
+    from {
+        color: rgb(62, 71, 71);
+    } to {
+        color: #66bbbb;
+    }
+}
+
+@keyframes reverse-color-change {
+    from {
+        color: rgb(102, 187, 187);
+    } to {
+        color: rgb(62, 71, 71);
+    }
+}
+
+.main-img {
+    border-radius: 50%;
+    width: 20vh;
 }
 
 h1 {
     text-align: center;
     font-size: 33pt;
 }
+
+/* Banner scrolling catalogue */
 
 .wrapper {
     background-color: white;
@@ -77,8 +144,8 @@ h1 {
 
 .wrapper .track {
     display: flex;
-    width: calc(500px * 11);
-    animation: scroll 45s 0.5s linear infinite;
+    width: calc(500px * 13);
+    animation: scroll 55s 0.5s linear infinite;
 }
 
 .wrapper .workImage {
@@ -93,6 +160,6 @@ h1 {
     from {
         transform: translateX(0);
     } to {
-        transform: translateX(calc(-500px * 11));
+        transform: translateX(calc(-500px * 13));
     }
 }
