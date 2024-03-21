@@ -2,6 +2,10 @@ body {
     -webkit-text-size-adjust: none;
 }
 
+.adjusted-lines {
+    line-height: 1.25;
+}
+
 .top-banner {
     padding-bottom: 25px;
 }
@@ -102,7 +106,8 @@ a:hover {
 
 .main-img {
     border-radius: 50%;
-    width: 20vh;
+    width: 200px;
+    height: 200px;
 }
 
 h1 {
