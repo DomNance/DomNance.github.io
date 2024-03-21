@@ -45,6 +45,11 @@ a:hover {
 }
 
 .main {
+    content: "";
+    clear: both;
+    display: contents;
+    margin-left: auto;
+    margin-right: auto;
     opacity: 0%;
     padding-top:50px;
     display: flex;
@@ -74,12 +79,6 @@ a:hover {
     padding-left: 25px;
 }
 
-.bio {
-    text-align: left; 
-    padding-left: 25px; 
-    font-size: 14pt;
-}
-
 @keyframes fade-in {
     from {
         opacity: 0%;
@@ -106,8 +105,6 @@ a:hover {
 
 .main-img {
     border-radius: 50%;
-    width: 200px;
-    height: 200px;
 }
 
 h1 {
