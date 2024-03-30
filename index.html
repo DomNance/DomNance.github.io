@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- Important styling that should stay -->
     <style>
         @font-face {
@@ -10,6 +11,7 @@
             font-weight: 400;
             font-style: normal;
             src: url('fonts/Poppins-Regular.ttf');
+            font-display: swap;
         }
 
         @font-face {
@@ -17,6 +19,7 @@
             font-weight: 700;
             font-style: normal;
             src: url('fonts/Poppins-Bold.ttf');
+            font-display: swap;
         }
 
         @font-face {
@@ -24,6 +27,7 @@
             font-weight: 700;
             font-style: italic;
             src: url('fonts/Poppins-Italic.ttf');
+            font-display: swap;
         }
 
         @font-face {
@@ -31,10 +35,12 @@
             font-weight: 700;
             font-style: italic;
             src: url('fonts/Poppins-BoldItalic.ttf');
+            font-display: swap;
         }
 
     </style>
-    <link rel="stylesheet" href="styles.css" async="">
+
+    <link rel="stylesheet" href="styles.css" media="print" onload="this.media='all'" async="">
     <link href="styles.css" rel="preload" as="style" onload="this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="styles.css"></noscript>
 
@@ -59,7 +65,7 @@
             <img style="float: left;" class="main-img" src="images/bio-pic.png" width=200px; height=200px; alt="bio image">
                 <span class="bio-text" style="max-width: 80%;"><b>Frontend Web Developer</b> <br> <br>
                 I'm a frontend developer based in Orange County, stacking over 5 years of experience in Web Development,
-                Software Development and IT troubleshooting. Constantly learning, and committing to providing user-friendly products and providing
+                Software Development and IT troubleshooting. Constantly learning, and committed to providing user-friendly products and providing
                 new and unique ways to create engaging user-interfaces and experiences.</span> <br> <br>
         </div>
         <br> <br>
@@ -84,7 +90,7 @@
         <div class="career">
             <div class="westprint">
                 <p class="adjusted-lines"><b>Westprint</b><span class="right-hang"><i>&nbsp;&nbsp;Orange, CA</i></span><br></p>
-                <p class="adjusted-lines">Web Developer | IT Specialist | Graphic Designer<span class="right-hang"><i>&nbsp;&nbsp;2022 — PRESENT</i></span><br></p>
+                <p class="adjusted-lines">Web Developer | IT Specialist | Graphic Designer<span class="right-hang"><i>&nbsp;&nbsp;2022 — 2024</i></span><br></p>
                 <p>
                     •   Constructed over 16 client portals from previous portals & databases, increasing client retention by 45%. <br>
                     •   Redesigned <a href="https://www.westprint.com/" target=”_blank”>Westprint</a> company website, resulting in 22% new visits with 3.5% returning visitors monthly. <br>
