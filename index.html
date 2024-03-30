@@ -5,31 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Important styling that should stay -->
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
-        .poppins-regular {
-            font-family: "Poppins", sans-serif;
+        @font-face {
+            font-family: 'Poppins';
             font-weight: 400;
             font-style: normal;
+            src: url('fonts/Poppins-Regular.ttf');
         }
 
-        .poppins-bold {
-            font-family: "Poppins", sans-serif;
+        @font-face {
+            font-family: 'Poppins';
             font-weight: 700;
             font-style: normal;
+            src: url('fonts/Poppins-Bold.ttf');
         }
 
-        .poppins-regular-italic {
-            font-family: "Poppins", sans-serif;
-            font-weight: 400;
-            font-style: italic;
-        }
-
-        .poppins-bold-italic {
-            font-family: "Poppins", sans-serif;
+        @font-face {
+            font-family: 'Poppins';
             font-weight: 700;
             font-style: italic;
+            src: url('fonts/Poppins-Italic.ttf');
         }
+
+        @font-face {
+            font-family: 'Poppins';
+            font-weight: 700;
+            font-style: italic;
+            src: url('fonts/Poppins-BoldItalic.ttf');
+        }
+
     </style>
     <link rel="stylesheet" href="styles.css" async="">
     <link href="styles.css" rel="preload" as="style" onload="this.rel='stylesheet'">
